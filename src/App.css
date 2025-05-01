@@ -1,0 +1,116 @@
+/* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #ffe6f2; 
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 800px;
+  margin: 5% auto 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour l'input */
+input[type="text"] {
+  width: 70%;
+  max-width: 400px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  border: 2px solid #ff66b3;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #b8124a;
+}
+
+/* Styles pour les boutons */
+button {
+  min-width: 80px;
+  height: 36px;
+  padding: 0 15px;
+  background-color: #b8124a;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #9a0f3f;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #ffd6e7;
+}
+
+
+.task {
+  flex-grow: 1;
+  max-width: 300px;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+  word-break: break-word;
+  color: #333;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Styles pour la checkbox */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #b8124a;
+}
+
+/* Message liste vide */
+.EmptyList {
+  font-weight: bold;
+  color: #b8124a;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Titre */
+h1 {
+  font-weight: bold;
+  color: #b8124a;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
